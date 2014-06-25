@@ -1,0 +1,68 @@
+
+/* 
+==========================================================================
+Global General Settings
+========================================================================== 
+*/
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: "jaf-mashine",sans-serif;
+}
+p {
+  font-family: "ff-tisa-web-pro",serif;
+}
+
+/* 
+==========================================================================
+Header & Nav Settings
+========================================================================== 
+*/
+
+.top-bar, .contain-to-grid {
+	background-color: #192026;
+	height:	100px;
+}
+.top-bar-section ul li>a {
+	font-family: "ff-tisa-web-pro",serif;
+	font-weight: 700;
+	font-style: normal;
+}
+.top-bar-section>ul>.divider, .top-bar-section>ul>[role="separator"] {
+	border-right: solid 1px #192026;
+}
+.contain-to-grid .top-bar {
+	padding-top: 28px;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: #f47527;
+	border-radius: 5px;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background: #fff;
+	color: #333;
+	border-radius: 5px;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background: #f47527;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	padding: 0 10px;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: none;
+}
+.top-bar-section ul {
+	background: none;
+}
+.top-bar-section ul li>a {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.tab-bar {
+	background-color: black;
+}
