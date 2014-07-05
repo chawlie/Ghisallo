@@ -41,19 +41,7 @@ get_header(); ?>
 </section>
 <section class="content">
 	<div class="row">
-		<div class="small-12 medium-3 columns" role="main">
-			<h3>Bike Club</h3>
-			<p><a href="#">Find a club and learn more about:</a></p> 
-			<ul>
-				<li>Safety</a></li>
-				<li>Maintenance</li>
-				<li>Exporation</li>
-			</ul>
-			<br>
-			<h3>Earn-a-Bike</h3>
-			<p><a href="#">Learn how to build and maintain your bike.</a></p> 
-		</div>
-		<div class="small-12 medium-5 columns" role="main">
+		<div class="small-12 medium-5 push-3 columns" role="main">
 		
 		<?php do_action('foundationPress_before_content'); ?>
 		
@@ -80,6 +68,23 @@ get_header(); ?>
 		<?php do_action('foundationPress_after_content'); ?>
 
 		</div>
+
+		<div class="program-links small-12 medium-3 pull-5 columns" role="main">
+			<h3>Bike Club</h3>
+			<p><a href="#">Find a club and learn more about:</a></p>
+			<ul>
+				<li>Safety</a></li>
+				<li>Maintenance</li>
+				<li>Exporation</li>
+			</ul>
+			<br>
+			<img src="<?php bloginfo('template_url'); ?>/assets/img/gears.svg">
+			<br><br><br>
+			<h3>Earn-a-Bike</h3>
+			<p><a href="#">Learn how to build and maintain your bike.</a></p>
+			<img src="<?php bloginfo('template_url'); ?>/assets/img/bikes.svg">
+		</div>
+
 		<div class="small-12 medium-4 columns" role="main">
 			<h3>We Need your Help!</h3>
 			<p>We need additional funds to support our current youth programs and expand to new schools and community partners in addition to continued development of our Cycle Academy materials. We are also in need of used but usable kids bikes for our free youth Earn-A-Bike and Maintenance program we offer through Boys and Girls Club East Club.</p> 

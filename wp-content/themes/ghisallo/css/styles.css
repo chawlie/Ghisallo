@@ -19,8 +19,10 @@ h3 {
   font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.25em;
 }
-p {
-  font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+body {
+  font-family: "ff-tisa-web-pro-n4", "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 a:link, a:visited {
 	color: #f47527;
@@ -32,7 +34,9 @@ a:hover {
 button, .button {
 	background-color: #fff;
 	border: 2px solid #f47527;
-	font-weight: bold;
+	font-family: "ff-tisa-web-pro-n4", "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+	font-weight: 700;
+	font-style: normal;
 }
 a.button {
 	text-decoration: none;
@@ -69,9 +73,9 @@ Header & Nav Settings
 	border-radius: 5px;
 }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-	background: #fff;
-	color: #333;
 	border-radius: 5px;
+	background: #f47527;
+	color: #333;
 }
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
 	background: #f47527;
@@ -82,6 +86,10 @@ Header & Nav Settings
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background: none;
+}
+.top-bar-section .dropdown li:not(.has-form) a:not(.button):hover {
+	background: #f47527;
+	border-radius: 0px; 
 }
 .top-bar-section ul {
 	background: none;
@@ -94,6 +102,42 @@ Header & Nav Settings
 .tab-bar {
 	background-color: black;
 }
+.top-bar-section .dropdown ul li a {
+	border-radius: 5px;
+	background-color: #f47527;
+}
+.top-bar-section .right li .dropdown {
+	left:0;
+	right: auto;
+	background-color: #000;
+}
+}
+
+#navigation .current-menu-item {
+	background-color: #f47527;
+	color: #1F6684;
+	border-radius: 5px
+}
+
+#navigation .current-menu-item a{
+	background-color: #f47527;
+}
+#navigation .current-menu-item li a {
+	border-radius: 0px;
+	background-color: #333;
+	color: #fff;
+}
+#navigation .current-menu-item ul {
+	margin-top: 0px;
+}
+#navigation .current-menu-item a:hover {
+	background-color: #f47527;
+	color: #fff;
+}
+.top-bar-section .dropdown ul li a:hover  {
+	background-color: red;
+}
+
 /* 
 ==========================================================================
 Home
@@ -104,6 +148,7 @@ Home
 
 .homepage-hero {
 	margin-top: -2em;
+	background-color: #222b33;
 	background: linear-gradient(
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.2)
@@ -210,6 +255,12 @@ Home
 .content li:before {
     content: "• ";
     color: #f47527;
+}
+.content p {
+	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+}
+.program-links {
+	margin-bottom: 5%;
 }
 /* 
 ==========================================================================
