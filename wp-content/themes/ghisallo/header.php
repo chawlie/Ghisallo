@@ -58,7 +58,7 @@
 		<?php foundationPress_mobile_off_canvas(); ?>
 	</aside>
 	
-				<div class="top-bar-container contain-to-grid show-for-medium-up">
+				<div id="navigation" class="top-bar-container contain-to-grid show-for-medium-up">
 						<nav class="top-bar" data-topbar="">
 								<ul class="title-area">
 										<li class="logo">

@@ -9,10 +9,41 @@ body {
 }
 
 h1 {
-  font-family: "jaf-mashine",sans-serif;
+  font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-p {
-  font-family: "ff-tisa-web-pro",serif;
+h2 {
+  font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+h3 {
+  font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+body {
+  font-family: "ff-tisa-web-pro-n4", "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a:link, a:visited {
+	color: #f47527;
+	text-decoration: underline;
+}
+a:hover {
+	color: #333;
+}
+button, .button {
+	background-color: #fff;
+	border: 2px solid #f47527;
+	font-family: "ff-tisa-web-pro-n4", "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+a.button {
+	text-decoration: none;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color: #f47527;
 }
 
 /* 
@@ -26,9 +57,10 @@ Header & Nav Settings
 	height:	100px;
 }
 .top-bar-section ul li>a {
-	font-family: "ff-tisa-web-pro",serif;
+	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
 	font-weight: 700;
 	font-style: normal;
+	text-decoration: none;
 }
 .top-bar-section>ul>.divider, .top-bar-section>ul>[role="separator"] {
 	border-right: solid 1px #192026;
@@ -41,9 +73,9 @@ Header & Nav Settings
 	border-radius: 5px;
 }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-	background: #fff;
-	color: #333;
 	border-radius: 5px;
+	background: #f47527;
+	color: #333;
 }
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
 	background: #f47527;
@@ -55,6 +87,10 @@ Header & Nav Settings
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background: none;
 }
+.top-bar-section .dropdown li:not(.has-form) a:not(.button):hover {
+	background: #f47527;
+	border-radius: 0px; 
+}
 .top-bar-section ul {
 	background: none;
 }
@@ -65,6 +101,166 @@ Header & Nav Settings
 
 .tab-bar {
 	background-color: black;
+}
+.top-bar-section .dropdown ul li a {
+	border-radius: 5px;
+	background-color: #f47527;
+}
+.top-bar-section .right li .dropdown {
+	left:0;
+	right: auto;
+	background-color: #000;
+}
+}
+
+#navigation .current-menu-item {
+	background-color: #f47527;
+	color: #1F6684;
+	border-radius: 5px
+}
+
+#navigation .current-menu-item a{
+	background-color: #f47527;
+}
+#navigation .current-menu-item li a {
+	border-radius: 0px;
+	background-color: #333;
+	color: #fff;
+}
+#navigation .current-menu-item ul {
+	margin-top: 0px;
+}
+#navigation .current-menu-item a:hover {
+	background-color: #f47527;
+	color: #fff;
+}
+.top-bar-section .dropdown ul li a:hover  {
+	background-color: red;
+}
+
+/* 
+==========================================================================
+Home
+========================================================================== 
+*/
+.top-bar-container, .tab-bar {
+}
+
+.homepage-hero {
+	margin-top: -2em;
+	background-color: #222b33;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ), url(../assets/img/hero.jpg) no-repeat top center ;
+	background-size: cover;
+	padding: 10% 0;
+}
+.homepage-hero h1 {
+	color: #fff;
+	font-size: 2.25em;
+	line-height: 1.5;
+	text-align: center;
+}
+.programs-feature {
+	background-color: #f47527;
+	padding: 5% 0;
+}
+
+.programs-feature h1 {
+	color: #fff;
+	font-size: 3em;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+.programs-feature p {
+	font-size: 2.5em;
+	line-height: 1;
+	font-size: 2em;
+	line-height: 1.5;
+	color: #333;
+}
+.programs-feature p a:link,
+.programs-feature p a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+.programs-feature p a:hover {
+	color: #000;
+}
+.bikerodeo-feature {
+	background-color: #192026;
+	padding: 4% 0 3% 0;
+}
+.bikerodeo-feature p {
+	color: #fff;
+	font-size: 1.75em;
+	display: inline-block;
+	vertical-align: top;
+	padding: 2px 0 0 10px;
+}
+.bikerodeo-feature p a:hover {
+	color: #fff;
+}
+.bikerodeo-feature span {
+	font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 5em;
+	color: #f47527;
+	display: inline;
+}
+.bikerodeo-feature h1 {
+	color: #fff;
+}
+.video-feature{
+	background-color: #222b33;
+	padding: 4% 0;
+	text-align: center;
+}
+.testimonial {
+	background-color: #d8d2ca;
+	padding: 4% 0;
+}
+.testimonial blockquote {
+	font-size: 1.88em;
+	line-height: 1.5;
+	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+	border-left: none;
+	padding: 0;
+	margin: 0;
+	color: #686868;
+	display: block;
+}
+.testimonial cite {
+	font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	color: #686868;
+	padding-top: 20px;
+	display: block;
+}
+.content {
+	padding: 3% 0;
+}
+.content ul {
+	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.content li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+.content li:before {
+    content: "• ";
+    color: #f47527;
+}
+.content p {
+	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+}
+.program-links {
+	margin-bottom: 5%;
 }
 /* 
 ==========================================================================
@@ -80,6 +276,7 @@ Footer Settings
 
 .footer a:link, .footer a:visited {
 	color: #fff;
+	text-decoration: none;
 }
 .footer a:hover {
 	color: #f47527;
