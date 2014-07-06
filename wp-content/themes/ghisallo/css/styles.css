@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-a:link, a:visited {
+a, a:link, a:visited {
 	color: #f47527;
 	text-decoration: underline;
 }
@@ -137,7 +137,66 @@ Header & Nav Settings
 .top-bar-section .dropdown ul li a:hover  {
 	background-color: red;
 }
-
+/* 
+==========================================================================
+Blog Styles
+========================================================================== 
+*/
+h1.entry-title {
+	font-size: 34px;
+	line-height: 1;
+}
+h2.post-title a {
+	text-decoration: none;
+	font-size: 34px;
+	line-height: 1;
+	color:	#333;
+}
+h2.post-title a:hover {
+	color: #f47527;
+}
+.entry-content p {
+	font-size: 18px;
+	line-height: 24px;
+}
+.entry-content img {
+	display: block;
+	padding-bottom: 20px;
+}
+hr {
+	border: solid #eee;
+	border-width: 5px 0 0;
+	clear: both;
+	margin: 30px 0;
+	height: 0;
+}
+ul.pagination li.current a {
+	background-color: #f47527;
+	text-decoration: none;
+}
+ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+	background-color: #333;
+}
+ul.pagination {
+	height: 50px;
+}
+ul.pagination li a {
+	display: block;
+	padding: 0.0625rem 0.625rem 0.0625rem;
+	color: #505050;
+	border-radius: 3px;
+	text-decoration: none;
+	font-weight: 700;
+}
+p.tags {
+	padding: 10px;
+	border: 2px solid #eee;
+	text-align: center;
+}
+figure {
+	line-height: 1.5;
+	margin: 0;
+}
 /* 
 ==========================================================================
 Home
