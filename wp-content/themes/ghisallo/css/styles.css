@@ -40,6 +40,7 @@ button, .button {
 }
 a.button {
 	text-decoration: none;
+	color: #333;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -55,15 +56,17 @@ Header & Nav Settings
 .top-bar, .contain-to-grid {
 	background-color: #192026;
 	height:	100px;
+	padding: 28px;
 }
 .top-bar-section ul li>a {
 	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+	font-size: 14px;
 	font-weight: 700;
 	font-style: normal;
 	text-decoration: none;
 }
-.top-bar-section>ul>.divider, .top-bar-section>ul>[role="separator"] {
-	border-right: solid 1px #192026;
+.top-bar-section ul li {
+	margin-right: 1px;
 }
 .contain-to-grid .top-bar {
 	padding-top: 28px;
@@ -80,7 +83,6 @@ Header & Nav Settings
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
 	background: #f47527;
 }
-
 .top-bar-section li:not(.has-form) a:not(.button) {
 	padding: 0 10px;
 }
@@ -98,7 +100,6 @@ Header & Nav Settings
 	font-size: 1em;
 	text-transform: uppercase;
 }
-
 .tab-bar {
 	background-color: black;
 }
@@ -106,13 +107,18 @@ Header & Nav Settings
 	border-radius: 5px;
 	background-color: #f47527;
 }
-.top-bar-section .right li .dropdown {
+#navigation li.divider {
+	display: none;
+}
+#navigation li ul {
 	left:0;
 	right: auto;
 	background-color: #000;
 }
+#navigation li ul li ul {
+	left: 100%;
+	right: auto;
 }
-
 #navigation .current-menu-item {
 	background-color: #f47527;
 	color: #1F6684;
@@ -135,7 +141,16 @@ Header & Nav Settings
 	color: #fff;
 }
 .top-bar-section .dropdown ul li a:hover  {
-	background-color: red;
+}
+
+#navigation li ul li ul li a,
+#navigation .current-menu-item li ul li a {
+	border-radius: 0px;
+	background-color: #444;
+}
+#navigation li ul li ul li a:hover  {
+	border-radius: 0px;
+	background-color: #f47527;
 }
 /* 
 ==========================================================================
@@ -328,7 +343,7 @@ Footer Settings
 */
 .footer {
 	background: #30373e;
-	height: 250px;
+	height: 270px;
 	color: #fff;
 	padding-top: 40px;
 }
