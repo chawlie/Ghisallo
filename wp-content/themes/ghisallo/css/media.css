@@ -12,25 +12,28 @@
 		font-size: 1em;
 	}
 	.programs-feature h1 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		padding-top: 4%;
 	}
 	.programs-feature {
 		text-align: center;
 	}
 	.programs-feature p {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.bikerodeo-feature {
 		text-align: center;
+		padding-top: 10%;
 	}
 	.bikerodeo-feature p {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.testimonial blockquote {
 		font-size: 1.2em;
 	}
-
+	.content h2 {
+		font-size: 1.25em;
+	}
 }
 @media all and (min-width: 1025px) {
 	ul.social {

@@ -40,6 +40,7 @@ button, .button {
 }
 a.button {
 	text-decoration: none;
+	color: #333;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -55,9 +56,11 @@ Header & Nav Settings
 .top-bar, .contain-to-grid {
 	background-color: #192026;
 	height:	100px;
+	padding: 28px;
 }
 .top-bar-section ul li>a {
 	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+	font-size: 14px;
 	font-weight: 700;
 	font-style: normal;
 	text-decoration: none;
@@ -340,7 +343,7 @@ Footer Settings
 */
 .footer {
 	background: #30373e;
-	height: 250px;
+	height: 270px;
 	color: #fff;
 	padding-top: 40px;
 }
