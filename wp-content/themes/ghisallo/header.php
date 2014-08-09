@@ -31,7 +31,7 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		
-		<script type="text/javascript" src="//use.typekit.net/ryq4nzi.js"></script>
+		<script type="text/javascript" src="//use.typekit.net/tmc3hpv.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<?php wp_head(); ?>
 	</head>
@@ -47,19 +47,19 @@
 		<section class="left-small">
 			<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
 		</section>
-		<section class="middle tab-bar-section">
+		<section class="nav-logo right tab-bar-section">
 			
 			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-logo.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation"></a>
 
 		</section>
 	</nav>
 
-	<aside class="left-off-canvas-menu">
+	<aside class="nav-mobile left-off-canvas-menu">
 		<?php foundationPress_mobile_off_canvas(); ?>
 	</aside>
 	
 				<div id="navigation" class="top-bar-container show-for-medium-up">
-						<nav class="top-bar" data-topbar="">
+						<nav class="nav-menu top-bar" data-topbar="">
 								<ul class="title-area">
 										<li class="logo">
 											<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-logo.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation"></a>
