@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="row">
+<div class="row sub-page-container">
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" role="main">
 	

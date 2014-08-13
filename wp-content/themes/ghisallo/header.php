@@ -22,8 +22,6 @@
 		} ?></title>
 		
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/app.css" />
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/media.css" />
 		
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
@@ -31,7 +29,7 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		
-		<script type="text/javascript" src="//use.typekit.net/tmc3hpv.js"></script>
+		<script type="text/javascript" src="//use.typekit.net/ryq4nzi.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<?php wp_head(); ?>
 	</head>

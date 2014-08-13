@@ -9,10 +9,10 @@
 		<div class="small-12 large-8 columns">
 			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-logo.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation"></a>
 			<p>All rights reserved Copyright© 2014 &nbsp; | &nbsp;
-			<a href="#">501(c)(3)</a> &nbsp; | &nbsp;  
-			<a href="#">Legal</a> &nbsp; | &nbsp;   
-			<a href="#">Privacy Policy</a> &nbsp; | &nbsp;
-			<a href="#">Contact</a></p>
+			<a href="http://www.irs.gov/Charities-&-Non-Profits/Charitable-Organizations/Exemption-Requirements-Section-501%28c%29%283%29-Organizations">501(c)(3)</a> &nbsp; | &nbsp;  
+			<a href="<?php echo home_url( '/legal/' ); ?>">Legal</a> &nbsp; | &nbsp;   
+			<a href="<?php echo home_url( '/legal/privacy-policy/' ); ?>">Privacy Policy</a> &nbsp; | &nbsp;
+			<a href="<?php echo home_url( '/contact/' ); ?>">Contact</a></p>
 		</div>
 		<div class="small-12 large-4 columns">
 			<ul class="social">

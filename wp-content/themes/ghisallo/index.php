@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="row">
+<div class="row sub-page-container">
 	<div class="small-12 large-8 push-2 columns" role="main">
 		
 	<?php if ( have_posts() ) : ?>

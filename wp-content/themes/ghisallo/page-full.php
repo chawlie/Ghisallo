@@ -3,7 +3,7 @@
 Template Name: Full Width
 */
 get_header(); ?>
-<div class="row">
+<div class="row sub-page-container">
 	<div class="small-12 medium-10 push-1 columns" role="main">
 	
 	<?php /* Start loop */ ?>
