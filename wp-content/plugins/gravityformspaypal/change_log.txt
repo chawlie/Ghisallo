@@ -1,4 +1,11 @@
 ------------------------------------------------------------
+Version 1.10
+	- Updated the number of recurring times maximum from 30 to 52 per PayPal documentation
+    - Fixed issue where floating point comparision was failing in GFPayPal::is_valid_initial_payment_amount()
+    - Added new hook: 'gform_paypal_ipn_{transaction_type}'; allows users to easily hook into the specific IPN transactions they need
+	- Fixed issue with notifications not being sent when setting "only show notifications when payment is received" is enabled and payment is $0.00
+
+------------------------------------------------------------
 Version 1.9
 	- Fixed notice message
 	- Fixed issue where upgrade class was not always included when PayPal details are written on the plugins page

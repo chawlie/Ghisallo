@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms PayPal Add-On
 Plugin URI: http://www.gravityforms.com
 Description: Integrates Gravity Forms with PayPal, enabling end users to purchase goods and services through Gravity Forms.
-Version: 1.9
+Version: 1.10
 Author: rocketgenius
 Author URI: http://www.rocketgenius.com
 
@@ -37,7 +37,7 @@ class GFPayPal {
     private static $path = "gravityformspaypal/paypal.php";
     private static $url = "http://www.gravityforms.com";
     private static $slug = "gravityformspaypal";
-    private static $version = "1.9";
+    private static $version = "1.10";
     private static $min_gravityforms_version = "1.6.4";
     private static $production_url = "https://www.paypal.com/cgi-bin/webscr/";
     private static $sandbox_url = "https://www.sandbox.paypal.com/cgi-bin/webscr/";
@@ -288,25 +288,25 @@ class GFPayPal {
     }
 
     public static function delay_post($is_disabled, $form, $lead){
-        //loading data class
-        require_once(self::get_base_path() . "/data.php");
+    //loading data class
+    require_once(self::get_base_path() . "/data.php");
 
-        $config = GFPayPalData::get_feed_by_form($form["id"]);
-        if(!$config)
-            return $is_disabled;
+    $config = GFPayPalData::get_feed_by_form($form["id"]);
+    if(!$config)
+        return $is_disabled;
 
-        $config = $config[0];
-        if(!self::has_paypal_condition($form, $config))
-            return $is_disabled;
+    $config = $config[0];
+    if(!self::has_paypal_condition($form, $config))
+        return $is_disabled;
 
-        return $config["meta"]["delay_post"] == true;
-    }
+    return $config["meta"]["delay_post"] == true;
+}
 
     //Kept for backwards compatibility
     public static function delay_admin_notification($is_disabled, $form, $lead){
         $config = self::get_active_config($form);
 
-        if(!$config)
+        if(!$config || !self::has_payment($form, $lead, $config))
             return $is_disabled;
 
         return isset($config["meta"]["delay_notification"]) ? $config["meta"]["delay_notification"] == true : $is_disabled;
@@ -316,7 +316,7 @@ class GFPayPal {
     public static function delay_autoresponder($is_disabled, $form, $lead){
         $config = self::get_active_config($form);
 
-        if(!$config)
+        if(!$config || !self::has_payment($form, $lead, $config))
             return $is_disabled;
 
         return isset($config["meta"]["delay_autoresponder"]) ? $config["meta"]["delay_autoresponder"] == true : $is_disabled;
@@ -325,13 +325,40 @@ class GFPayPal {
     public static function delay_notification($is_disabled, $notification, $form, $lead){
         $config = self::get_active_config($form);
 
-        if(!$config)
+        if(!$config || !self::has_payment($form, $lead, $config)){
             return $is_disabled;
+        }
 
         $selected_notifications = is_array(rgar($config["meta"], "selected_notifications")) ? rgar($config["meta"], "selected_notifications") : array();
 
         return isset($config["meta"]["delay_notifications"]) && in_array($notification["id"], $selected_notifications) ? true : $is_disabled;
     }
+
+    public static function has_payment($form, $entry, $paypal_config){
+
+        $products = GFCommon::get_product_fields($form, $entry, true);
+        $recurring_field = rgar($paypal_config["meta"], "recurring_amount_field");
+        $total = 0;
+        foreach($products["products"] as $id => $product){
+
+            if($paypal_config["meta"]["type"] != "subscription" || $recurring_field == $id || $recurring_field == "all"){
+                $price = GFCommon::to_number($product["price"]);
+                if(is_array(rgar($product,"options"))){
+                    foreach($product["options"] as $option){
+                        $price += GFCommon::to_number($option["price"]);
+                    }
+                }
+
+                $total += $price * $product['quantity'];
+            }
+        }
+
+        if($recurring_field == "all" && !empty($products["shipping"]["price"]))
+            $total += floatval($products["shipping"]["price"]);
+
+        return $total > 0;
+    }
+
 
     private static function get_selected_notifications($config, $form){
         $selected_notifications = is_array(rgar($config['meta'], 'selected_notifications')) ? rgar($config['meta'], 'selected_notifications') : array();
@@ -610,7 +637,7 @@ class GFPayPal {
             </ul>
             <br/>
             <input type="checkbox" name="gf_paypal_configured" id="gf_paypal_configured" onclick="confirm_settings()" <?php echo $is_configured ? "checked='checked'" : ""?>/>
-            <label for="gf_paypal_configured" class="inline"><?php _e("Confirm that your have configured your PayPal account to enable IPN", "gravityformspaypal") ?></label>
+            <label for="gf_paypal_configured" class="inline"><?php _e("Confirm that you have configured your PayPal account to enable IPN", "gravityformspaypal") ?></label>
             <script type="text/javascript">
                 function confirm_settings(){
                     var confirmed = jQuery("#gf_paypal_configured").is(":checked") ? 1 : 0;
@@ -1326,7 +1353,7 @@ class GFPayPal {
                         <select id="gf_paypal_recurring_times" name="gf_paypal_recurring_times">
                             <option value=""><?php _e("Infinite", "gravityformspaypal") ?></option>
                             <?php
-                            for($i=2; $i<=30; $i++){
+                            for($i=2; $i<=52; $i++){
                                 $selected = ($i == rgar($config["meta"],"recurring_times")) ? 'selected="selected"' : '';
                                 ?>
                                 <option value="<?php echo $i ?>" <?php echo $selected; ?>><?php echo $i ?></option>
@@ -1613,6 +1640,7 @@ class GFPayPal {
                 jQuery(document).trigger('paypalFormSelected', [form]);
 
                 jQuery("#gf_paypal_conditional_enabled").attr('checked', false);
+
                 SetPayPalCondition("","");
 
                 if(form["notifications"]){
@@ -2115,8 +2143,9 @@ class GFPayPal {
         $cancel = apply_filters("gform_paypal_pre_ipn", false, $_POST, $entry, $config);
 
         if(!$cancel) {
-            self::log_debug("Setting payment status...");
-            self::set_payment_status($config, $entry, RGForms::post("payment_status"), RGForms::post("txn_type"), RGForms::post("txn_id"), RGForms::post("parent_txn_id"), RGForms::post("subscr_id"), RGForms::post("mc_gross"), RGForms::post("pending_reason"), RGForms::post("reason_code") );
+            self::log_debug( 'Setting payment status...' );
+            self::set_payment_status( $config, $entry, rgpost( 'payment_status' ), rgpost( 'txn_type' ), rgpost( 'txn_id' ), rgpost( 'parent_txn_id' ), rgpost( 'subscr_id' ), rgpost( 'mc_gross' ), rgpost( 'pending_reason' ), rgpost( 'reason_code' ) );
+            do_action( 'gform_paypal_ipn_' . rgpost( 'txn_type' ), $entry, $config, rgpost( 'payment_status' ), rgpost( 'txn_type' ), rgpost( 'txn_id' ), rgpost( 'parent_txn_id' ), rgpost( 'subscr_id' ), rgpost( 'mc_gross' ), rgpost( 'pending_reason' ), rgpost( 'reason_code' ) );
         }
         else{
             self::log_debug("IPN processing cancelled by the gform_paypal_pre_ipn filter. Aborting.");
@@ -2537,7 +2566,7 @@ class GFPayPal {
         return $fields;
     }
 
-    private static function is_valid_initial_payment_amount($config, $lead){
+    public static function is_valid_initial_payment_amount($config, $lead){
 
         $form = RGFormsModel::get_form_meta($lead["form_id"]);
         $products = GFCommon::get_product_fields($form, $lead, true);
@@ -2568,11 +2597,15 @@ class GFPayPal {
 
             break;
         }
-
+        
+        $epsilon = 0.00001;
+        $is_equal = abs( floatval( $payment_amount ) - floatval( $product_amount ) ) < $epsilon;
+        $is_greater = floatval( $payment_amount ) >= floatval( $product_amount );
+                    
         //initial payment is valid if it is equal to or greater than product/subscription amount
-        if(floatval($payment_amount) >= floatval($product_amount)){
+        if( $is_equal || $is_greater ){
             return true;
-        }
+		}
 
         return false;
 
@@ -2889,12 +2922,12 @@ class GFPayPal {
     }
 
     //Returns the url of the plugin's root folder
-    protected function get_base_url(){
+    protected static function get_base_url(){
         return plugins_url(null, __FILE__);
     }
 
     //Returns the physical path of the plugin's root folder
-    protected function get_base_path(){
+    protected static function get_base_path(){
         $folder = basename(dirname(__FILE__));
         return WP_PLUGIN_DIR . "/" . $folder;
     }
@@ -2919,6 +2952,7 @@ class GFPayPal {
 		$payment_string .= '</select>';
 		return $payment_string;
     }
+
     public static function admin_edit_payment_status_details($form_id, $lead)
     {
 		//check meta to see if this entry is paypal
