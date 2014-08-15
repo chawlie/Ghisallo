@@ -95,9 +95,7 @@ get_header(); ?>
 <section class="testimonial">
 	<div class="row">
 		<div class="small-12 columns">
-			<blockquote>"The Earn-A-Bike and Maintenance Shop is an amazing program.  I love seeing their pride when they earn their bike and when they come back to help their friends and siblings work on their own bikes."</blockquote>
-				<cite>Dorothy Garza (Club Director, Boys and Girls Club East Club)</cite>
-			
+			<?php echo do_shortcode('[testimonialswidget_widget]'); ?>			
 		</div>
 	</div>
 </section>

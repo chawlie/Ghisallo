@@ -1,8 +1,4 @@
-/* Custom Settings */
-$primary-color: #f47527;
-$secondary-color: #cc6221;
-$alert-red: #c60f13;
-/*
+
 /* 
 ==========================================================================
 Global General Settings
@@ -208,15 +204,6 @@ padding: 0 10px 0 20px;
 }
 /* 
 ==========================================================================
-Page Styles
-========================================================================== 
-*/
-.sub-page-container {
-	margin: 40px auto;
-}
-
-/* 
-==========================================================================
 Blog Styles
 ========================================================================== 
 */
@@ -284,6 +271,7 @@ Home
 }
 
 .homepage-hero {
+	margin-top: -2em;
 	background-color: #222b33;
 	background: linear-gradient(
       rgba(0, 0, 0, 0.2), 
@@ -449,85 +437,4 @@ Form Settings
 }
 .gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
 	margin: 0 24px 0 24px !important;
-}
-
-input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
-	box-shadow: none;
-	border-radius: 5px;
-	font-size: 1.25em;
-}
-
-input[type="submit"] {
-	-webkit-appearance: none;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	background: $primary-color;
-	border: none;
-	padding: 20px;
-	color: white;
-	font-size: 1em;
-}
-
-input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
-	background: #FFFFFF;
-	border: 2px solid $primary-color;
-	outline: none;
-	box-shadow: none;
-}
-input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.wpcf7-not-valid {
-	border: 2px solid $alert-red;
-}
-span.wpcf7-form-control-wrap {
-	width: 100%;
-}
-span.wpcf7-not-valid-tip {
-	color: $alert-red !important;
-}
-
-div.wpcf7-validation-errors {
-	border: 2px solid $alert-red !important;
-	background-color: $alert-red;
-	color: #fff;
-}
-div.wpcf7-response-output {
-margin: 2em 0 2em !important;
-padding: 0.8em 1em !important;
-}
-:focus {
-	outline: -webkit-focus-ring-color auto 0px;
-}
-input[type="submit"]:hover{
-    background-color: $secondary-color;
-}
-
-/* 
-==========================================================================
-Misc
-========================================================================== 
-*/
-
-// Testimonials
-.testimonials-widget-testimonial cite, .testimonials-widget-testimonial div.credit {
-	text-align: left !important;
-	font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 1em;
-	font-style: normal;
-	color: #686868;
-	padding-top: 20px;
-}
-
-// Bios & Staff
-.bio p {
-	margin: 0;
-	padding: 0;
-}
-.bio p:last-child {
-	margin-bottom: 40px;
-}
-.bio h1 {
-	font-size: rem-calc(18);
-	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
-	font-weight: 700;
-	margin: 15px 0 0;
-	display: inline-block;
 }
