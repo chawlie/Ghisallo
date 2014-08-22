@@ -21,199 +21,110 @@ get_header(); ?>
 			</footer>
 			<?php comments_template(); ?>
 		</article>
- --> 		<div class="row">
+ --> 		<div class="staff-bios">
  			<h1>Instructors</h1>
  			<div class="row bio">
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
+	 			<div class="small-12 large-4 columns bio-grid">
 	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
 	 				<p>Executive Director &amp; Founder</p>
 					<p>christopher@ghisall.org</p>
 					<p>512-576-3812</p>
 					<p>LCI, Red Cross First Aid, etc</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Noni Jarnagin</h1>
+	 				<p>Instructor &amp; Volunteer Coordinator</p>
+					<p>noni.jarnagin@ghisallo.org</p>
+					<p>512-470-9367</p>
+					<p>LCI, OSHA First Aid</p>
+	 			</div>
+	 			<div class="large-4 columns bio-grid">
 	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
 	 				<p>Executive Director &amp; Founder</p>
 					<p>christopher@ghisall.org</p>
 					<p>512-576-3812</p>
 					<p>LCI, Red Cross First Aid, etc</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Stephen Bonett</h1>
+	 				<p>Instructor</p>
+					<p>EMT</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Erin Cooper</h1>
+	 				<p>Instructor</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Larry Murphy</h1>
+	 				<p>Instructor</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Larry Murphy</h1>
+	 				<p>Instructor</p>
+	 			</div>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Jake Bapple</h1>
+	 				<p>Assistant Instructor &amp; Content Development</p>
+	 			</div>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Shaylee Walsh</h1>
+	 				<p>Assistant Instructor</p>
+	 			</div>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Mike Kelly</h1>
+	 				<p>Skate Instructor</p>
+	 			</div>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Jake Carsten</h1>
+	 				<p>Off-Road Instructor</p>
+	 				<p>IMBA</p>
+	 			</div>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Eryn Moris</h1>
+	 				<p>Content Editor</p>
 	 			</div>
  			</div>
  			<h1>Apprentices</h1>
  			<div class="row bio">
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Se’Daruis Rodgers</h1>
+	 				<p>Apprentice Mechanic &amp; Apprentice Instructor</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Denzel Dawkins</h1>
+	 				<p>Shop Assistant</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
-	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
-	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
-	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Larinz Demps</h1>
+	 				<p>Shop Assistant</p>
 	 			</div>
  			</div>
  			<h1>Board Members</h1>
  			<div class="row bio">
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Cary Choate</h1>
+	 				<p>Board Chair</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Mitchell Kilbey</h1>
+	 				<p>Board Vice Chair</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Mary Stanton</h1>
+	 				<p>Board Treasurer</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Daniel Curtin</h1>
+	 				<p>Board Secretary</p>
 	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
-	 			</div>
-	 			<div class="large-4 columns">
-	 				<a href="#" data-reveal-id="myModal"><img src="http://placehold.it/400x450"></a>
-	 				<h1>Christopher Stanton</h1>
-	 				<a href="#" data-reveal-id="myModal" class="round alert label">BIO</a>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Zach Bolian</h1>
+	 				<p>Board</p>
 	 			</div>
  			</div>
  		</div>
 
-		<div id="myModal" class="row reveal-modal" data-reveal>
-		  <h2>Christopher Stanton</h2>
-		  <div class="row">
-		  	<div class="large-5 columns hide-for-medium-down">
-			  <img src="http://placehold.it/400x450">
-			</div>
-			<div class="large-7 columns">
-			  <p class="lead">Chistopher is awesome. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  </div>
-		  	</div>
-		  	<a class="close-reveal-modal">&#215;</a>
-		  </div>
-		</div>
-
+		
 	<?php endwhile; // End the loop ?>
 
 	</div>

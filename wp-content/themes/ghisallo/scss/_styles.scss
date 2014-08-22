@@ -298,6 +298,29 @@ Home
 	line-height: 1.5;
 	text-align: center;
 }
+.donate-volunteer-feature {
+	background-color: #222b33;
+	padding: 2% 0 2%;
+	margin-top: -40px;
+}
+.donate-volunteer-feature .button {
+	width: 100%;
+	margin-bottom: 0;
+	border-color: #f47527;
+}
+.donate-volunteer-feature a.button {
+	background-color: #222b33;
+	color: #fff;
+}
+.donate-volunteer-feature .button:hover {
+	background-color: #f47527;
+}
+.donate-volunteer-feature h2 {
+	color: #fff;
+	font-size: rem-calc(24);
+	line-height: 1;
+	margin-top: 20px;
+}
 .programs-feature {
 	background-color: #f47527;
 	padding: 5% 0;
@@ -441,7 +464,7 @@ ul.social {
 Form Settings
 ========================================================================== 
 */
-.gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
+.inline-numbers .gform_wrapper .gfield_checkbox li, .inline-numbers  .gform_wrapper .gfield_radio li {
 	display: inline-block;
 }
 .gform_wrapper ul.gfield_checkbox li input[type=checkbox], .gform_wrapper ul.gfield_radio li input[type=radio] {
@@ -530,4 +553,13 @@ Misc
 	font-weight: 700;
 	margin: 15px 0 0;
 	display: inline-block;
+}
+.bio-grid {
+	height: 180px;
+}
+.bio-grid:nth-child(n+4) {
+	height: 130px;
+}
+.bio [class*="column"]+[class*="column"]:last-child {
+	float: left;
 }

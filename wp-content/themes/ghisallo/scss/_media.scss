@@ -10,6 +10,7 @@
 @media all and (max-width: 767px) {
 	.homepage-hero h1 {
 		font-size: 1em;
+		padding-bottom: 30px;
 	}
 	.programs-feature h1 {
 		font-size: 1.2em;
@@ -33,6 +34,10 @@
 	}
 	.content h2 {
 		font-size: 1.25em;
+	}
+	.donate-volunteer-feature .column, .donate-volunteer-feature .columns {
+		padding-right: 7px;
+		padding-left: 7px;
 	}
 }
 @media all and (max-width: 1024px) {
