@@ -13,10 +13,10 @@ get_header(); ?>
 </section>
 <section class="donate-volunteer-feature">
 	<div class="row">
-		<div class="hide-for-small medium-6 columns">
-			<h2>We welcome your support! </h2>
+		<div class="hide-for-small medium-6 columns text-center">
+			<h2>Get Involved </h2>
 		</div>
-		<div class="small-6 medium-3 columns">
+		<div class="small-6 medium-3 columns donate-button">
 			<a href="<?php echo home_url();?>/donate/" class="button small">Donate</a>
 		</div>
 		<div class="small-6 medium-3 columns">	
@@ -31,14 +31,14 @@ get_header(); ?>
 		</div>
 		<div class="small-12 medium-9 columns">
 			<h1>Over 1,922 youth participants</h1>
-			<p>have attended our bicycle riding, maintenance, and safety <a href="#">Bike Clubs</a> and <a href="#">Earn-A-Bike</a> classes since 2013.</p>
+			<p>have attended our bicycle riding, maintenance, and safety <a href="<?php echo home_url();?>/services/classes/bike-clubs/">Bike Clubs</a> and <a href="<?php echo home_url();?>/services/classes/earn-a-bike/">Earn-A-Bike</a> classes since 2013.</p>
 		</div>
 	</div>
 </section>
 <section class="bikerodeo-feature">
 	<div class="row">
 		<div class="small-12 medium-12 columns">
-			<span>293</span><p> more took part in our high volume <a href="#">Bike Rodeos</a> and clinics!</p>
+			<span>293</span><p> more took part in our high volume <a href="<?php echo home_url();?>/services/clinics/bike-rodeos/">Bike Rodeos</a> and clinics!</p>
 		</div>
 	</div>
 </section>
@@ -54,7 +54,7 @@ get_header(); ?>
 </section> -->
 <section class="content">
 	<div class="row">
-		<div class="small-12 medium-5 push-3 columns" role="main">
+		<div class="small-12 medium-7 columns" role="main">
 		
 		<?php do_action('foundationPress_before_content'); ?>
 		
@@ -82,9 +82,9 @@ get_header(); ?>
 
 		</div>
 
-		<div class="program-links small-12 medium-3 pull-5 columns" role="main">
+		<div class="program-links small-12 medium-5 columns" role="main">
 			<h3>Bike Club</h3>
-			<p><a href="#">Find a club and learn more about:</a></p>
+			<p><a href="<?php echo home_url();?>/services/classes/bike-clubs/">Find a club and learn more about:</a></p>
 			<ul>
 				<li>Safety</a></li>
 				<li>Maintenance</li>
@@ -94,18 +94,28 @@ get_header(); ?>
 			<img src="<?php bloginfo('template_url'); ?>/assets/img/gears.svg">
 			<hr>
 			<h3>Earn-a-Bike</h3>
-			<p><a href="#">Learn how to build and maintain your bike.</a></p>
+			<p><a href="<?php echo home_url();?>/services/classes/earn-a-bike/">Learn how to build and maintain your bike.</a></p>
 			<img src="<?php bloginfo('template_url'); ?>/assets/img/bikes.svg">
 			<hr>
 			<h3>Email News</h3>
 			<p>Sign up to recieve email news and updates.</p>
 			<a href="<?php echo home_url();?>/email-signup/" class="button">Sign Up for News</a>
 		</div>
-
-		<div class="small-12 medium-4 columns" role="main">
-			<h3>We Need your Help!</h3>
-			<p>We need additional funds to support our current youth programs and expand to new schools and community partners in addition to continued development of our Cycle Academy materials. We are also in need of used but usable kids bikes for our free youth Earn-A-Bike and Maintenance program we offer through Boys and Girls Club East Club.</p> 
-		    <a href="<?php echo home_url();?>/donate/" class="button">Donate to Ghisallo Foundation</a>
+	</div>
+</section>
+<section class="donate-feature">
+	<div class="row">
+		<div class="column">
+			<div class="panel clearfix">
+				<div class="small-12 medium-5 columns" role="main">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/bike-kids.jpg">
+				</div>
+				<div class="small-12 medium-7 columns" role="main">
+				    <h3>We Need Your Help!</h3>
+					<p>We need additional funds to support our current youth programs and expand to new schools and community partners in addition to continued development of our Cycle Academy materials. We are also in need of used but usable kids bikes for our free youth Earn-A-Bike and Maintenance program we offer through Boys and Girls Club East Club.</p>
+				    <a href="<?php echo home_url();?>/donate/why-donate/" class="button">Find Out More</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

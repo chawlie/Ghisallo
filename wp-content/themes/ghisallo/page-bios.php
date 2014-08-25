@@ -39,23 +39,12 @@ get_header(); ?>
 					<p>LCI, OSHA First Aid</p>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
-	 				<h1>Christopher Stanton</h1>
-	 				<p>Executive Director &amp; Founder</p>
-					<p>christopher@ghisall.org</p>
-					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
-	 			</div>
-	 			<div class="large-4 columns bio-grid">
 	 				<h1>Stephen Bonett</h1>
 	 				<p>Instructor</p>
 					<p>EMT</p>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Erin Cooper</h1>
-	 				<p>Instructor</p>
-	 			</div>
-	 			<div class="large-4 columns bio-grid">
-	 				<h1>Larry Murphy</h1>
 	 				<p>Instructor</p>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
@@ -84,7 +73,7 @@ get_header(); ?>
 	 				<p>Content Editor</p>
 	 			</div>
  			</div>
- 			<h1>Apprentices</h1>
+ 			<h1>Apprentices and Assistants (Youth Staff)</h1>
  			<div class="row bio">
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Se’Daruis Rodgers</h1>
@@ -97,6 +86,17 @@ get_header(); ?>
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Larinz Demps</h1>
 	 				<p>Shop Assistant</p>
+	 			</div>
+ 			</div>
+ 			<h1>Staff</h1>
+ 			<div class="row bio">
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Charlie Chauvin</h1>
+	 				<p>Web Design &amp; Art Direction</p>
+	 			</div>
+	 			<div class="large-4 columns bio-grid">
+	 				<h1>Eryn Moris</h1>
+	 				<p>Copy Editor</p>
 	 			</div>
  			</div>
  			<h1>Board Members</h1>

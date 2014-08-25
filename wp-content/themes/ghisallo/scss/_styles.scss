@@ -70,17 +70,15 @@ Header & Nav Settings
 	text-decoration: none;
 }
 .top-bar-section ul li {
-	margin-right: 1px;
+	margin-right: 3px;
 }
 .contain-to-grid .top-bar {
 	padding-top: 28px;
 }
 .top-bar-section li:not(.has-form) a:not(.button):hover {
 	background: #f47527;
-	border-radius: 5px;
 }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-	border-radius: 5px;
 	background: #f47527;
 	color: #333;
 }
@@ -88,14 +86,13 @@ Header & Nav Settings
 	background: #f47527;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
-	padding: 0 10px;
+	padding: 0 8px;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background: none;
 }
 .top-bar-section .dropdown li:not(.has-form) a:not(.button):hover {
 	background: #f47527;
-	border-radius: 0px; 
 }
 .top-bar-section ul {
 	background: none;
@@ -109,7 +106,6 @@ Header & Nav Settings
 	height: 50px;
 }
 .top-bar-section .dropdown ul li a {
-	border-radius: 5px;
 	background-color: #f47527;
 }
 #navigation li.divider {
@@ -118,7 +114,7 @@ Header & Nav Settings
 #navigation li ul {
 	left:0;
 	right: auto;
-	background-color: #000;
+	background-color: #333;
 }
 #navigation li ul li ul {
 	left: 100%;
@@ -127,14 +123,12 @@ Header & Nav Settings
 #navigation .current-menu-item {
 	background-color: #f47527;
 	color: #1F6684;
-	border-radius: 5px
 }
 
 #navigation .current-menu-item a{
 	background-color: #f47527;
 }
 #navigation .current-menu-item li a {
-	border-radius: 0px;
 	background-color: #333;
 	color: #fff;
 }
@@ -206,6 +200,24 @@ padding: 0 10px 0 20px;
 	font-weight: 700;
 	font-size: .85em;
 }
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	color: #fff;
+}
+.top-bar-section li.active:not(.has-form) ul li a:not(.button) {
+	background-color: #333;
+}
+// Active hover
+.top-bar-section .dropdown li:not(.has-form):hover>a:not(.button) {
+	background: #f47527;
+}
+.top-bar-section ul li:hover:not(.has-form)>a {
+	background-color: #f47527;
+}
+
+.top-bar-section .active ul li:hover:not(.has-form)>a {
+	background-color: #f47527;
+}
+
 /* 
 ==========================================================================
 Page Styles
@@ -321,6 +333,11 @@ Home
 	line-height: 1;
 	margin-top: 20px;
 }
+.donate-feature .panel {
+	border: 1px solid #999;
+	padding: 30px 15px 10px;
+	margin-bottom: 5%;
+}
 .programs-feature {
 	background-color: #f47527;
 	padding: 5% 0;
@@ -399,7 +416,7 @@ Home
 	display: block;
 }
 .content {
-	padding: 3% 0;
+	padding: 3% 0 0;
 }
 .content ul {
 	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
@@ -419,7 +436,7 @@ Home
 	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
 }
 .program-links {
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 /* 
 ==========================================================================
