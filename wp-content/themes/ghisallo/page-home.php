@@ -38,7 +38,7 @@ get_header(); ?>
 <section class="bikerodeo-feature">
 	<div class="row">
 		<div class="small-12 medium-12 columns">
-			<span>293</span><p> more took part in our high volume <a href="<?php echo home_url();?>/services/clinics/bike-rodeos/">Bike Rodeos</a> and clinics!</p>
+			<span>293</span><p> more took part in our <a href="<?php echo home_url();?>/services/clinics/bike-rodeos/">Bike Rodeos</a> and clinics!</p>
 		</div>
 	</div>
 </section>
