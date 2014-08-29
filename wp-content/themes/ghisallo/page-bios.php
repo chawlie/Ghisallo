@@ -29,11 +29,11 @@ get_header(); ?>
 	 				<p>Executive Director &amp; Founder</p>
 					<p>christopher@ghisall.org</p>
 					<p>512-576-3812</p>
-					<p>LCI, Red Cross First Aid, etc</p>
+					<p>LCI, Red Cross First Aid</p>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Noni Jarnagin</h1>
-	 				<p>Instructor &amp; Volunteer Coordinator</p>
+	 				<p>Instructor, Volunteer Coordinator</p>
 					<p>noni.jarnagin@ghisallo.org</p>
 					<p>512-470-9367</p>
 					<p>LCI, OSHA First Aid</p>
@@ -53,31 +53,23 @@ get_header(); ?>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Jake Bapple</h1>
-	 				<p>Assistant Instructor &amp; Content Development</p>
+	 				<p>Assistant Instructor, Content Development</p>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Shaylee Walsh</h1>
 	 				<p>Assistant Instructor</p>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
-	 				<h1>Mike Kelly</h1>
-	 				<p>Skate Instructor</p>
-	 			</div>
-	 			<div class="large-4 columns bio-grid">
 	 				<h1>Jake Carsten</h1>
 	 				<p>Off-Road Instructor</p>
 	 				<p>IMBA</p>
 	 			</div>
-	 			<div class="large-4 columns bio-grid">
-	 				<h1>Eryn Moris</h1>
-	 				<p>Content Editor</p>
-	 			</div>
  			</div>
- 			<h1>Apprentices and Assistants (Youth Staff)</h1>
+ 			<h1>Apprentices and Assistants</h1>
  			<div class="row bio">
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Se’Daruis Rodgers</h1>
-	 				<p>Apprentice Mechanic &amp; Apprentice Instructor</p>
+	 				<p>Apprentice Mechanic, Apprentice Instructor</p>
 	 			</div>
 	 			<div class="large-4 columns bio-grid">
 	 				<h1>Denzel Dawkins</h1>

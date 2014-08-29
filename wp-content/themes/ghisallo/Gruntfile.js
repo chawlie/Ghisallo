@@ -50,7 +50,7 @@ module.exports = function(grunt) {
           'js/init-foundation.js'
         ],
 
-        dest: 'js/app.js'
+        dest: 'js/app2.js'
       }
 
     },
