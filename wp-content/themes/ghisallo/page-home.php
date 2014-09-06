@@ -88,7 +88,7 @@ get_header(); ?>
 			<ul>
 				<li>Safety</a></li>
 				<li>Maintenance</li>
-				<li>Exporation</li>
+				<li>Exploration</li>
 			</ul>
 			<br>
 			<img src="<?php bloginfo('template_url'); ?>/assets/img/gears.svg">
@@ -113,7 +113,7 @@ get_header(); ?>
 				<div class="small-12 medium-7 columns" role="main">
 				    <h3>We Need Your Help!</h3>
 					<p>We need additional funds to support our current youth programs and expand to new schools and community partners in addition to continued development of our Cycle Academy materials. We are also in need of used but usable kids bikes for our free youth Earn-A-Bike and Maintenance program we offer through Boys and Girls Club East Club.</p>
-				    <a href="<?php echo home_url();?>/donate/why-donate/" class="button">Find Out More</a>
+				    <a href="<?php echo home_url();?>/donate/donation-information/" class="button">Find Out More</a>
 				</div>
 			</div>
 		</div>

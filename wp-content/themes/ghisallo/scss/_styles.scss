@@ -51,6 +51,9 @@ a.button {
 button:hover, button:focus, .button:hover, .button:focus {
 	background-color: #f47527;
 }
+ul, ol, dl {
+	font-size: rem-calc(18);
+}
 
 /* 
 ==========================================================================
@@ -306,7 +309,7 @@ Home
 }
 .homepage-hero h1 {
 	color: #fff;
-	font-size: 2.25em;
+	font-size: 2.6em;
 	line-height: 1.5;
 	text-align: center;
 }
@@ -540,6 +543,32 @@ padding: 0.8em 1em !important;
 input[type="submit"]:hover{
     background-color: $secondary-color;
 }
+/* 
+==========================================================================
+Error 404 Page
+========================================================================== 
+*/
+
+.error-404 {
+	background-color: #ec7226;
+	background: url(../assets/img/lost-bike.jpg) no-repeat top center;
+	background-size: cover;
+}
+.error-404 section {
+	margin: 8% 0 8%;
+}
+.error-404 h1 {
+	font-size: rem-calc(80);
+	color: #fff;
+}
+.error-404 p {
+	color: #fff;
+	font-size: rem-calc(30);
+}
+
+.error-404 button:hover, .error-404 button:focus, .error-404 .button:hover, .error-404 .button:focus {
+	background-color: #333;
+}
 
 /* 
 ==========================================================================
@@ -580,4 +609,8 @@ Misc
 }
 .bio [class*="column"]+[class*="column"]:last-child {
 	float: left;
+}
+p.quote {
+	font-size: rem-calc(24);
+	line-height: 1.5;
 }

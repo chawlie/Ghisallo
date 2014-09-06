@@ -55,6 +55,12 @@
 	.top-bar {
 		height: 140px;
 	}
+	.error-404 h1 {
+	font-size: rem-calc(30);
+	}
+	.error-404 p {
+	font-size: rem-calc(20);
+	}
 }
 @media all and (min-width: 1025px) {
 	ul.social {
