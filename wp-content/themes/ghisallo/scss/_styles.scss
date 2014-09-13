@@ -162,7 +162,7 @@ Header & Nav Settings
 	border-right: solid 1px #fff;
 	left: 0;
 	padding-top: 2px;
-	background: #f47527;
+	background: #db6a23;
 }
 .tab-bar .menu-icon span,
 .tab-bar .menu-icon:hover span {
@@ -289,6 +289,16 @@ p.tags {
 figure {
 	line-height: 1.5;
 	margin: 0;
+}
+.post-meta {
+	margin-bottom: 20px;
+}
+.post-thumb img {
+	float: left;
+	padding-right: 20px;
+}
+.news-post hr {
+	margin: 15px 0 35px 0;
 }
 /* 
 ==========================================================================
@@ -572,6 +582,43 @@ Error 404 Page
 
 /* 
 ==========================================================================
+SubPage-Nav
+========================================================================== 
+*/
+.subpage-nav {
+	border: 1px solid #ccc;
+	text-align: center;
+	border-bottom: none;
+}
+.subpage-nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.subpage-nav ul li a {
+	padding: 15px 0 15px;
+	display: block;
+	border-bottom: 1px solid #ccc;
+}
+.subpage-nav li.active {
+	background: $primary-color;
+}
+.subpage-nav li.active a {
+	color: #fff;
+}
+.subpage-nav li a {
+	text-decoration: none;
+}
+.subpage-nav li a:hover {
+	color: #333;
+}
+.subpage-nav li:last-child {
+	border-bottom: none;
+}
+
+
+/* 
+==========================================================================
 Misc
 ========================================================================== 
 */
@@ -613,4 +660,21 @@ Misc
 p.quote {
 	font-size: rem-calc(24);
 	line-height: 1.5;
+}
+.title-bar {
+	background-color: darken($primary-color, 5%);
+	width: 100%;
+}
+.title-bar h1 {
+	font-size: rem-calc(40);
+	color: #ffffff;
+	margin: 25px 0 15px;
+}
+// Sponsor Logos
+.sponsor-logos figure {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	float: left;
+	padding: 15px;
 }

@@ -3,11 +3,18 @@
 Template Name: Staff & Bios
 */
 get_header(); ?>
+<?php /* Start loop */ ?>
+<?php while (have_posts()) : the_post(); ?>
+<div class="title-bar">
+	<div class="row">
+		<div class="small-12 columns" role="main">
+		<h1><h1 class="entry-title"><?php the_title(); ?></h1></h1>
+		</div>
+	</div>
+</div>
 <div class="row sub-page-container">
-	<div class="small-12 medium-10 push-1 columns" role="main">
+	<div class="small-12 medium-8 columns" role="main">
 	
-	<?php /* Start loop */ ?>
-	<?php while (have_posts()) : the_post(); ?>
 <!-- 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -115,11 +122,9 @@ get_header(); ?>
 	 			</div>
  			</div>
  		</div>
-
-		
-	<?php endwhile; // End the loop ?>
-
+		<?php endwhile; // End the loop ?>
 	</div>
+	<?php get_sidebar(page); ?>
 </div>
 		
 <?php get_footer(); ?>
