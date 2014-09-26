@@ -30,15 +30,15 @@ get_header(); ?>
 		<img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-bird.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation">
 		</div>
 		<div class="small-12 medium-9 columns">
-			<h1>Over 1,922 youth participants</h1>
-			<p>have attended our bicycle riding, maintenance, and safety <a href="<?php echo home_url();?>/services/classes/bike-clubs/">Bike Clubs</a> and <a href="<?php echo home_url();?>/services/classes/earn-a-bike/">Earn-A-Bike</a> classes since 2013.</p>
+			<h1>Over 2,005 youth participants</h1>
+			<p>have attended our bicycle riding, maintenance, and safety <a href="<?php echo home_url();?>/services/classes/bike-club/">Bike Club</a> and <a href="<?php echo home_url();?>/services/classes/earn-a-bike/">Earn-A-Bike</a> classes since 2013.</p>
 		</div>
 	</div>
 </section>
 <section class="bikerodeo-feature">
 	<div class="row">
-		<div class="small-12 medium-12 columns">
-			<span>293</span><p> more took part in our <a href="<?php echo home_url();?>/services/clinics/bike-rodeos/">Bike Rodeos</a> and clinics!</p>
+		<div class="small-12 medium-12 small-centered columns">
+			<span>315</span><p> more have taken part in our <a href="<?php echo home_url();?>/services/clinics/bike-rodeo/">Bike Rodeos</a> and clinics!</p>
 		</div>
 	</div>
 </section>
@@ -84,7 +84,7 @@ get_header(); ?>
 
 		<div class="program-links small-12 medium-5 columns" role="main">
 			<h3>Bike Club</h3>
-			<p><a href="<?php echo home_url();?>/services/classes/bike-clubs/">Find a club and learn more about:</a></p>
+			<p><a href="<?php echo home_url();?>/services/classes/bike-club/">Find a club and learn more about:</a></p>
 			<ul>
 				<li>Safety</a></li>
 				<li>Maintenance</li>

@@ -7,7 +7,7 @@
 	</div>
 </div>
 <div class="row sub-page-container">
-	<div class="small-12 medium-8 push-2 columns" role="main">
+	<div class="small-12 medium-9 columns" role="main">
 	
 	<?php do_action('foundationPress_before_content'); ?>
 	

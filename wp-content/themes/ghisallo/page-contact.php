@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Sponsor Logos
+Template Name: Contact Page
 */
 get_header(); ?>
 <?php do_action('foundationPress_before_content'); ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 	<div class="small-12 large-8 columns" role="main">
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<?php do_action('foundationPress_page_before_entry_content'); ?>
-			<div class="entry-content sponsor-logos">
+			<div class="entry-content">
 				<?php the_content(); ?>
 			</div>
 			<footer>
@@ -32,6 +32,6 @@ get_header(); ?>
 	<?php do_action('foundationPress_after_content'); ?>
 
 	</div>
-	<?php get_sidebar(about); ?>
+	<?php get_sidebar(contact); ?>
 </div>
 <?php get_footer(); ?>

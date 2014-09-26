@@ -124,7 +124,7 @@ get_header(); ?>
  		</div>
 		<?php endwhile; // End the loop ?>
 	</div>
-	<?php get_sidebar(page); ?>
+	<?php get_sidebar(about); ?>
 </div>
 		
 <?php get_footer(); ?>

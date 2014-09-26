@@ -13,7 +13,7 @@ get_header(); ?>
 	</div>
 </div>
 <div class="row sub-page-container">
-	<div class="small-12 medium-10 push-1 columns" role="main">
+	<div class="small-12 medium-10 columns">
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<div class="entry-content">

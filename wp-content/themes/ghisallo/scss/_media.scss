@@ -6,10 +6,25 @@
         font-style: normal;
     }
 }
-
+@media all and (max-width: 479px) {
+	.post-thumb img {
+		float: none;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		display: block;
+		width: 100%;
+	}
+	.sponsor-logos figure {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	float: none;
+	padding: 10px;
+	}
+}
 @media all and (max-width: 767px) {
 	.homepage-hero h1 {
-		font-size: 1em;
+		font-size: rem-calc(20);
 		padding-bottom: 30px;
 	}
 	.programs-feature h1 {
@@ -45,13 +60,30 @@
 	.donate-feature .panel {
 		padding: 20px 5px 0px;
 	}
-	.sponsor-logos figure {
-	width: 150px;
-	height: 150px;
-	display: inline-block;
-}
+	.title-bar h1 {
+	font-size: rem-calc(30);
+	}
+	h2.post-title a, h1.entry-title {
+	font-size: rem-calc(24);
+	}
 }
 @media all and (max-width: 1024px) {
+		.top-bar-section li:not(.has-form) a:not(.button) {
+		padding: 0 5px;
+	}
+		.error-404 h1 {
+		font-size: rem-calc(30);
+	}
+		.error-404 p {
+		font-size: rem-calc(20);
+	}
+}
+@media all and (min-width: 1025px) {
+	ul.social {
+		text-align: right;
+	}
+}
+@media all and (max-width: 1139px) {
 	.top-bar-section {
 		float: left;
 		clear: left;
@@ -59,16 +91,5 @@
 	}
 	.top-bar {
 		height: 140px;
-	}
-	.error-404 h1 {
-	font-size: rem-calc(30);
-	}
-	.error-404 p {
-	font-size: rem-calc(20);
-	}
-}
-@media all and (min-width: 1025px) {
-	ul.social {
-		text-align: right;
 	}
 }
