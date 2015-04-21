@@ -30,7 +30,7 @@ get_header(); ?>
 		<img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-bird.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation">
 		</div>
 		<div class="small-12 medium-9 columns">
-			<h1>Over 2,005 youth participants</h1>
+			<h1>Over 3,334 youth participants</h1>
 			<p>have attended our bicycle riding, maintenance, and safety <a href="<?php echo home_url();?>/services/classes/bike-club/">Bike Club</a> and <a href="<?php echo home_url();?>/services/classes/earn-a-bike/">Earn-A-Bike</a> classes since 2013.</p>
 		</div>
 	</div>
@@ -38,7 +38,7 @@ get_header(); ?>
 <section class="bikerodeo-feature">
 	<div class="row">
 		<div class="small-12 medium-12 small-centered columns">
-			<span>315</span><p> more have taken part in our <a href="<?php echo home_url();?>/services/clinics/bike-rodeo/">Bike Rodeos</a> and clinics!</p>
+			<span>1621</span><p> more have taken part in our <a href="<?php echo home_url();?>/services/clinics/bike-rodeo/">Bike Rodeos</a> and clinics!</p>
 		</div>
 	</div>
 </section>
