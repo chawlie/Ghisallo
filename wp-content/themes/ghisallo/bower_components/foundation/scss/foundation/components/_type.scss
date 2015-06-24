@@ -14,7 +14,6 @@ $header-font-color: #222 !default;
 $header-line-height: 1.4 !default;
 $header-top-margin: .2rem !default;
 $header-bottom-margin: .5rem !default;
-$header-text-rendering: optimizeLegibility !default;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(44) !default;
@@ -44,7 +43,6 @@ $paragraph-margin-bottom: rem-calc(20) !default;
 $paragraph-aside-font-size: rem-calc(14) !default;
 $paragraph-aside-line-height: 1.35 !default;
 $paragraph-aside-font-style: italic !default;
-$paragraph-text-rendering: optimizeLegibility !default;
 
 // We use these to style <code> tags
 $code-color: scale-color($alert-color, $lightness: -27%) !default;
@@ -214,7 +212,6 @@ $align-class-breakpoints:
       font-size: $paragraph-font-size;
       line-height: $paragraph-line-height;
       margin-bottom: $paragraph-margin-bottom;
-      text-rendering: $paragraph-text-rendering;
 
       &.lead { @include lead; }
 
@@ -231,7 +228,6 @@ $align-class-breakpoints:
       font-weight: $header-font-weight;
       font-style: $header-font-style;
       color: $header-font-color;
-      text-rendering: $header-text-rendering;
       margin-top: $header-top-margin;
       margin-bottom: $header-bottom-margin;
       line-height: $header-line-height;

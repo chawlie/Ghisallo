@@ -1,0 +1,95 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'open_sansbold';
+        src: url('OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+@media all and (max-width: 479px) {
+	.post-thumb img {
+		float: none;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		display: block;
+		width: 100%;
+	}
+	.sponsor-logos figure {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	float: none;
+	padding: 10px;
+	}
+}
+@media all and (max-width: 767px) {
+	.homepage-hero h1 {
+		font-size: rem-calc(20);
+		padding-bottom: 30px;
+	}
+	.programs-feature h1 {
+		font-size: 1.2em;
+		padding-top: 4%;
+	}
+	.programs-feature {
+		text-align: center;
+	}
+	.programs-feature p {
+		font-size: 1em;
+	}
+	.bikerodeo-feature {
+		text-align: center;
+		padding-top: 10%;
+	}
+	.bikerodeo-feature p {
+		font-size: 1em;
+	}
+	.testimonial blockquote {
+		font-size: 1.2em;
+	}
+	.content h2 {
+		font-size: 1.25em;
+	}
+	.donate-volunteer-feature .column, .donate-volunteer-feature .columns {
+		padding-right: 7px;
+		padding-left: 7px;
+	}
+	.donate-feature h3 {
+		margin-top: 25px;
+	}
+	.donate-feature .panel {
+		padding: 20px 5px 0px;
+	}
+	.title-bar h1 {
+	font-size: rem-calc(30);
+	}
+	h2.post-title a, h1.entry-title {
+	font-size: rem-calc(24);
+	}
+}
+@media all and (max-width: 1024px) {
+		.top-bar-section li:not(.has-form) a:not(.button) {
+		padding: 0 5px;
+	}
+		.error-404 h1 {
+		font-size: rem-calc(30);
+	}
+		.error-404 p {
+		font-size: rem-calc(20);
+	}
+}
+@media all and (min-width: 1025px) {
+	ul.social {
+		text-align: right;
+	}
+}
+@media all and (max-width: 1139px) {
+	.top-bar-section {
+		float: left;
+		clear: left;
+		padding-top: 20px;
+	}
+	.top-bar {
+		height: 140px;
+	}
+}

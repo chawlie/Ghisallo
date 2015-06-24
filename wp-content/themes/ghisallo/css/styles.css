@@ -37,6 +37,7 @@ button, .button {
 	font-family: "ff-tisa-web-pro-n4", "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
 	font-weight: 700;
 	font-style: normal;
+	color: #333;
 }
 a.button {
 	text-decoration: none;
@@ -60,7 +61,6 @@ Header & Nav Settings
 }
 .top-bar-section ul li>a {
 	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
-	font-size: 14px;
 	font-weight: 700;
 	font-style: normal;
 	text-decoration: none;
@@ -102,6 +102,7 @@ Header & Nav Settings
 }
 .tab-bar {
 	background-color: black;
+	height: 50px;
 }
 .top-bar-section .dropdown ul li a {
 	border-radius: 5px;
@@ -151,6 +152,55 @@ Header & Nav Settings
 #navigation li ul li ul li a:hover  {
 	border-radius: 0px;
 	background-color: #f47527;
+}
+.left-small {
+	width: 56px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	border-right: solid 1px #fff;
+	left: 0;
+	padding-top: 2px;
+	background: #f47527;
+}
+.tab-bar .menu-icon span,
+.tab-bar .menu-icon:hover span {
+	position: absolute;
+	display: block;
+	height: 0px;
+	width: 24px;
+	line-height: 1;
+	top: 0.9375rem;
+	left: 0.90625rem;
+	box-shadow: 0 0px 0 2px #ffffff,0 8px 0 2px #ffffff,0 16px 0 2px #ffffff;
+}
+.nav-mobile ul li a {
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-color: #333;
+}
+.nav-mobile ul li ul li a {
+	padding-left: 20px;
+	background-color: #505050;
+}
+.nav-mobile ul li ul li ul li a {
+	padding-left: 30px;
+	background-color: #636363;
+}
+.nav-mobile ul li {
+	list-style: none;
+}
+.nav-mobile ul li ul, ul li ol {
+	margin-left: 0;
+}
+.nav-logo a img {
+border: none;
+padding: 0 10px 0 20px;
+}
+#navigation a {
+	font-weight: 700;
+	font-size: .85em;
 }
 /* 
 ==========================================================================
@@ -372,4 +422,19 @@ ul.social {
 	border-top: 6px solid #56606a;
 	margin-top: 20px;
 	padding-top: 20px;
+}
+
+/* 
+==========================================================================
+Form Settings
+========================================================================== 
+*/
+.gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
+	display: inline-block;
+}
+.gform_wrapper ul.gfield_checkbox li input[type=checkbox], .gform_wrapper ul.gfield_radio li input[type=radio] {
+	margin: 0 5px 0;
+}
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+	margin: 0 24px 0 24px !important;
 }

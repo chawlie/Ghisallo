@@ -29,4 +29,9 @@ require_once('library/enqueue-scripts.php');
 // Add theme support
 require_once('library/theme-support.php');
 
+if ( function_exists( 'add_theme_support' ) ) { 
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 250, 250, true ); // default Post Thumbnail dimensions (cropped)
+}
+
 ?>

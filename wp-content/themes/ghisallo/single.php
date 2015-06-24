@@ -1,6 +1,13 @@
 <?php get_header(); ?>
-<div class="row">
-	<div class="small-12 medium-8 push-2 columns" role="main">
+<div class="title-bar">
+	<div class="row">
+		<div class="small-12 columns" role="main">
+		<h1>News</h1>
+		</div>
+	</div>
+</div>
+<div class="row sub-page-container">
+	<div class="small-12 medium-9 columns" role="main">
 	
 	<?php do_action('foundationPress_before_content'); ?>
 	
@@ -8,18 +15,10 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-<!-- 				<?php FoundationPress_entry_meta(); ?>
- -->			</header>
+				<!-- <?php FoundationPress_entry_meta(); ?> -->
+			</header>
 			<div class="entry-content">
-			
-			<?php if ( has_post_thumbnail() ): ?>
-				<div class="row">
-					<div class="column">
-						<?php the_post_thumbnail('', array('class' => 'th')); ?>
-					</div>
-				</div>
-			<?php endif; ?>
-			
+						
 			<?php the_content(); ?>
 			</div>
 			<footer>

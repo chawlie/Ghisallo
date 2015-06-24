@@ -1,25 +1,16 @@
 <?php get_header(); ?>
 
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns" role="main">
-	
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php _e('File Not Found', 'FoundationPress'); ?></h1>
-			</header>
-			<div class="entry-content">
-				<div class="error">
-					<p class="bottom"><?php _e('The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'FoundationPress'); ?></p>
-				</div>
-				<p><?php _e('Please try the following:', 'FoundationPress'); ?></p>
-				<ul> 
-					<li><?php _e('Check your spelling', 'FoundationPress'); ?></li>
-					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'FoundationPress'), home_url()); ?></li>
-					<li><?php _e('Click the <a href="javascript:history.back()">Back</a> button', 'FoundationPress'); ?></li>
-				</ul>
+	<div class="error-404">
+		<div class="row">
+			<div class="small-12 large-12 large-centered columns text-center" role="main">
+				<section>
+					<h1 class="entry-title">Error: <br>You are off the beaten path!</h1>
+					<p>That's all right, get back on that saddle and use the navigation above to get you where you need to go or...</p>
+					<a href="<?php echo home_url( '/' ); ?>" class="button">Visit Our Home Page</a>
+				</section>
 			</div>
-		</article>
-
+		</div>
 	</div>
 <!-- 	<?php get_sidebar(); ?>
  -->		
