@@ -3,11 +3,11 @@
 Template Name: Home Page
 */
 get_header(); ?>
- 
+
 <section class="homepage-hero">
 	<div class="row">
 		<div class="small-12 medium-12 columns">
-			<h1> Educating and developing youth riders into cycling experts who integrate bicycling into their daily lives.</h1>
+			<h1><?php the_field('hero_headline'); ?></h1>
 		</div>
 	</div>
 </section>
@@ -19,7 +19,7 @@ get_header(); ?>
 		<div class="small-6 medium-3 columns donate-button">
 			<a href="<?php echo home_url();?>/donate/" class="button small">Donate</a>
 		</div>
-		<div class="small-6 medium-3 columns">	
+		<div class="small-6 medium-3 columns">
 			<a href="<?php echo home_url();?>/volunteer/" class="button small">Volunteer</a>
 		</div>
 	</div>
@@ -30,7 +30,7 @@ get_header(); ?>
 		<img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-bird.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation">
 		</div>
 		<div class="small-12 medium-9 columns">
-			<h1>Over 3,334 youth participants</h1>
+			<h1>Over <?php the_field('participants'); ?> youth participants</h1>
 			<p>have attended our bicycle riding, maintenance, and safety <a href="<?php echo home_url();?>/services/classes/bike-club/">Bike Club</a> and <a href="<?php echo home_url();?>/services/classes/earn-a-bike/">Earn-A-Bike</a> classes since 2013.</p>
 		</div>
 	</div>
@@ -38,26 +38,51 @@ get_header(); ?>
 <section class="bikerodeo-feature">
 	<div class="row">
 		<div class="small-12 medium-12 small-centered columns">
-			<span>1621</span><p> more have taken part in our <a href="<?php echo home_url();?>/services/clinics/bike-rodeo/">Bike Rodeos</a> and clinics!</p>
+			<span><?php the_field('bike_rodeos'); ?></span><p> more have taken part in our <a href="<?php echo home_url();?>/services/clinics/bike-rodeo/">Bike Rodeos</a> and clinics!</p>
 		</div>
 	</div>
 </section>
-<!-- <section class="video-feature">
+<section class="video-feature">
 	<div class="row">
 		<div class="small-12 medium-12 columns">
-			<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-			<div class='embed-container'>
-				<iframe src='http://www.youtube.com/embed/iTBYJRG6Lcg' frameborder='0' allowfullscreen></iframe>
+			<h2>We envision a community where youth become lifelong expert cyclists and safety-conscious riders.</h2>
+			<div class="tabs-content">
+				<div class="content active" id="panel-video-1">
+					<div class="flex-video">
+						<iframe src="https://player.vimeo.com/video/105975324?title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="content" id="panel-video-2">
+					<div class="flex-video">
+						<iframe src="https://player.vimeo.com/video/105774258" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="content" id="panel-video-3">
+					<div class="flex-video">
+						<iframe src="https://player.vimeo.com/video/105774259" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="content" id="panel-video-4">
+					<div class="flex-video">
+						<iframe src="https://player.vimeo.com/video/105774257?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<dl class="tabs" data-tab>
+					<dd class="active"><a href="#panel-video-1">Introduction</a></dd>
+					<dd><a href="#panel-video-2">Apprentice</a></dd>
+					<dd><a href="#panel-video-3">Bike Club</a></dd>
+					<dd><a href="#panel-video-4">Earn a Bike</a></dd>
+				</dl>
 			</div>
 		</div>
 	</div>
-</section> -->
+</section>
 <section class="content">
 	<div class="row">
 		<div class="small-12 medium-7 columns" role="main">
-		
+
 		<?php do_action('foundationPress_before_content'); ?>
-		
+
 		<?php while (have_posts()) : the_post(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<header>
@@ -122,7 +147,7 @@ get_header(); ?>
 <section class="testimonial">
 	<div class="row">
 		<div class="small-12 columns">
-			<?php echo do_shortcode('[testimonialswidget_widget]'); ?>			
+			<?php echo do_shortcode('[testimonialswidget_widget]'); ?>
 		</div>
 	</div>
 </section>

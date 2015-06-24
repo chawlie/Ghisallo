@@ -31,11 +31,7 @@
 		
 		<script type="text/javascript" src="//use.typekit.net/ryq4nzi.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		<script type="text/javascript">
-        jQuery(document).ready(function () {
-            jQuery('li.menu-item-type-taxonomy > a').contents().unwrap();
-        });
-</script>
+		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

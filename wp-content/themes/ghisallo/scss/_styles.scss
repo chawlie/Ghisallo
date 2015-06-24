@@ -2,11 +2,17 @@
 $primary-color: #f47527;
 $secondary-color: #cc6221;
 $alert-red: #c60f13;
+
+/* Foundation Over Rides */
+
+.flex-video {
+	padding-bottom: 54%;
+}
+
 /*
-/* 
 ==========================================================================
 Global General Settings
-========================================================================== 
+==========================================================================
 */
 body {
 	-webkit-font-smoothing: antialiased;
@@ -55,10 +61,10 @@ ul, ol, dl {
 	font-size: rem-calc(18);
 }
 
-/* 
+/*
 ==========================================================================
 Header & Nav Settings
-========================================================================== 
+==========================================================================
 */
 
 .top-bar, .contain-to-grid {
@@ -221,19 +227,19 @@ padding: 0 10px 0 20px;
 	background-color: #f47527;
 }
 
-/* 
+/*
 ==========================================================================
 Page Styles
-========================================================================== 
+==========================================================================
 */
 .sub-page-container {
 	margin: 40px auto;
 }
 
-/* 
+/*
 ==========================================================================
 Blog Styles
-========================================================================== 
+==========================================================================
 */
 h1.entry-title {
 	font-size: 34px;
@@ -300,10 +306,10 @@ figure {
 .news-post hr {
 	margin: 15px 0 35px 0;
 }
-/* 
+/*
 ==========================================================================
 Home
-========================================================================== 
+==========================================================================
 */
 .top-bar-container, .tab-bar {
 }
@@ -311,7 +317,7 @@ Home
 .homepage-hero {
 	background-color: #222b33;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ), url(../assets/img/hero.jpg) no-repeat top center ;
 	background-size: cover;
@@ -406,6 +412,70 @@ Home
 	background-color: #222b33;
 	padding: 4% 0;
 	text-align: center;
+
+	h2 {
+		color: #fff;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		@media #{$medium-only} {
+			padding-bottom: 0;
+			font-size: 20px;
+		}
+		@media #{$small-only} {
+			padding-top: 10px;
+			padding-bottom: 0;
+			font-size: 20px
+		}
+	}
+
+	.tabs {
+
+		dd {
+			width: 25%;
+
+			@media #{$medium-only} {
+				width: 50%;
+			}
+
+			@media #{$small-only} {
+				width: 100%;
+			}
+
+			&.active a {
+				background-color: $primary-color !important;
+				text-decoration: none;
+			}
+
+			&:nth-of-type(odd) a {
+				background-color: #3B4651;
+			}
+
+			@media #{$medium-only} {
+				&:nth-child(2) a {
+					background-color: #3B4651;
+				}
+				&:nth-child(3) a {
+					background-color: #3B4651;
+				}
+			}
+
+			a {
+				text-decoration: none;
+				font-family: "jaf-mashine",Arial,"Helvetica Neue",Helvetica,sans-serif;
+				background-color: #333D47;
+				color: #fff;
+				padding: 20px 0 15px;
+
+				@media #{$small-only} {
+					padding: 5px 0 0;
+				}
+
+				&:hover {
+					background-color: #192026;
+				}
+			}
+		}
+	}
 }
 .testimonial {
 	background-color: #d8d2ca;
@@ -438,8 +508,8 @@ Home
 	padding: 0;
 	margin: 0;
 }
-.content li { 
-    padding-left: 1em; 
+.content li {
+    padding-left: 1em;
     text-indent: -.7em;
 }
 .content li:before {
@@ -452,10 +522,10 @@ Home
 .program-links {
 	margin-bottom: 3%;
 }
-/* 
+/*
 ==========================================================================
 Footer Settings
-========================================================================== 
+==========================================================================
 */
 .footer {
 	background: #30373e;
@@ -490,10 +560,10 @@ ul.social {
 	padding-top: 20px;
 }
 
-/* 
+/*
 ==========================================================================
 Form Settings
-========================================================================== 
+==========================================================================
 */
 .inline-numbers .gform_wrapper .gfield_checkbox li, .inline-numbers  .gform_wrapper .gfield_radio li {
 	display: inline-block;
@@ -553,10 +623,10 @@ padding: 0.8em 1em !important;
 input[type="submit"]:hover{
     background-color: $secondary-color;
 }
-/* 
+/*
 ==========================================================================
 Error 404 Page
-========================================================================== 
+==========================================================================
 */
 
 .error-404 {
@@ -580,10 +650,10 @@ Error 404 Page
 	background-color: #333;
 }
 
-/* 
+/*
 ==========================================================================
 SubPage-Nav
-========================================================================== 
+==========================================================================
 */
 .subpage-nav {
 	border: 1px solid #ccc;
@@ -620,10 +690,10 @@ SubPage-Nav
 }
 
 
-/* 
+/*
 ==========================================================================
 Misc
-========================================================================== 
+==========================================================================
 */
 
 // Testimonials
