@@ -20,15 +20,15 @@
 		} else {
 			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} ?></title>
-		
+
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/app.css" />
-		
+
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
-		
+
 		<script type="text/javascript" src="//use.typekit.net/ryq4nzi.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
@@ -36,35 +36,36 @@
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
-	
+
 	<div class="off-canvas-wrap">
 	<div class="inner-wrap">
-	
-	<?php do_action('foundationPress_layout_start'); ?>
-	
-	<nav class="tab-bar show-for-small-only">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-		</section>
-		<section class="nav-logo right tab-bar-section">
-			
-			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-logo.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation"></a>
 
-		</section>
-	</nav>
+	<?php do_action('foundationPress_layout_start'); ?>
+
+	<section class="show-for-small-only">
+		<nav class="tab-bar">
+			<section class="left-small">
+				<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+			</section>
+			<span class="mobile-menu-label">MENU</span>
+		</nav>
+		<div class="mobile-logo">
+			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-cycling-initiative-logo.svg" alt="Ghisallo Cycling Initiative" title="Ghisallo Cycling Initiative"></a>
+		</div>
+	</section>
 
 	<aside class="nav-mobile left-off-canvas-menu">
 		<?php foundationPress_mobile_off_canvas(); ?>
 	</aside>
-	
+
 				<div id="navigation" class="top-bar-container show-for-medium-up">
 						<nav class="nav-menu top-bar" data-topbar="">
 								<ul class="title-area">
 										<li class="logo">
-											<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-logo.svg" alt="The Ghisallo Foundation" title="The Ghisallo Foundation"></a>
+											<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/ghisallo-cycling-initiative-logo.svg" alt="Ghisallo Cycling Initiative" title="Ghisallo Cycling Initiative"></a>
 										</li>
 								</ul>
-								<section class="top-bar-section">
+								<section class="primary-navigation top-bar-section">
 										<?php foundationPress_top_bar_l(); ?>
 										<?php foundationPress_top_bar_r(); ?>
 								</section>
