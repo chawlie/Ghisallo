@@ -66,11 +66,13 @@ ul, ol, dl {
 Header & Nav Settings
 ==========================================================================
 */
-
+.primary-navigation {
+	margin-top: 7px;
+}
 .top-bar, .contain-to-grid {
 	background-color: #192026;
 	height:	100px;
-	padding: 28px;
+	padding: 20px 30px 20px;
 }
 .top-bar-section ul li>a {
 	font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
@@ -116,6 +118,11 @@ Header & Nav Settings
 }
 .top-bar-section .dropdown ul li a {
 	background-color: #f47527;
+}
+#navigation {
+	.logo {
+		width: 250px;
+	}
 }
 #navigation li.divider {
 	display: none;
@@ -180,6 +187,18 @@ Header & Nav Settings
 	top: 0.9375rem;
 	left: 0.90625rem;
 	box-shadow: 0 0px 0 2px #ffffff,0 8px 0 2px #ffffff,0 16px 0 2px #ffffff;
+}
+.mobile-logo {
+	padding: 30px;
+	text-align: center;
+
+	img {
+		width: 250px;
+	}
+}
+.mobile-menu-label {
+	margin-left: 70px;
+	font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .nav-mobile ul li a {
 	color: #fff;
@@ -532,6 +551,10 @@ Footer Settings
 	height: 270px;
 	color: #fff;
 	padding-top: 40px;
+
+	.footer-logo {
+		width: 250px;
+	}
 }
 
 .footer a:link, .footer a:visited {
