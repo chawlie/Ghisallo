@@ -144,6 +144,36 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+
+<section class="home-sponsors">
+	<div class="row">
+		<div class="small-6 columns text-left">
+			<h3>Our Sponsors</h3>
+		</div>
+		<div class="small-6 columns text-right">
+			<a href="<?php echo home_url();?>/about/sponsors/" class="button see-more-button">See All Sponsors</a>
+		</div>
+		<div class="small-12 columns">
+			<div class="slideshow">
+				<?php $my_query = new WP_Query('cat=328&post_type=sponsors&orderby=rand'); ?>
+				<?php while ($my_query->have_posts()): $my_query->the_post(); ?>
+					<?php
+						$sponsor_logo = get_field('sponsor_logo');
+						$sponsor_name = get_field('sponsor_name');
+					?>
+					<div class="spnsr-container">
+						<div class="spnsr-logo">
+							<?php if (!empty($sponsor_logo)): ?>
+								<a href="<?php echo home_url();?>/about/sponsors/"><img src="<?= $sponsor_logo ?>" title="<?= $sponsor_name ?>"></a>
+							<?php endif; ?>
+						</div>
+					</div>
+				<?php endwhile; ?>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="testimonial">
 	<div class="row">
 		<div class="small-12 columns">

@@ -2,6 +2,9 @@
 $primary-color: #f47527;
 $secondary-color: #cc6221;
 $alert-red: #c60f13;
+[class*="column"]+[class*="column"]:last-child {
+	float: left; // Overrides Foundation default to float last element to the right.
+}
 
 /* Foundation Over Rides */
 
@@ -59,6 +62,14 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 ul, ol, dl {
 	font-size: rem-calc(18);
+}
+
+.see-more-button {
+	background-color: #f0ece7;
+	border: none;
+	font-size: 12px;
+	padding: 10px 20px;
+	margin-bottom: 0;
 }
 
 /*
@@ -777,6 +788,33 @@ p.quote {
 p.phone {
 	font-size: rem-calc(20);
 	line-height: .5;
+}
+
+.sponsor-gallery {
+	display: table;
+}
+
+.spnsr-container {
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+
+.spnsr-logo {
+	padding: 20px;
+	display: table-cell;
+	height: 240px;
+	vertical-align: middle;
+	text-align: center;
+	width: 200px;
+}
+
+.sponsor-levels {
+	margin-bottom: 30px;
+
+	hr {
+		margin: 10px 0;
+	}
 }
 // Sidebar search
 .sidebar-search-input {
