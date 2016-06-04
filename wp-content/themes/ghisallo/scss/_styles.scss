@@ -23,6 +23,7 @@ body {
 
 h1 {
   font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1;
 }
 h2 {
   font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -93,6 +94,7 @@ Header & Nav Settings
 }
 .top-bar-section ul li {
 	margin-right: 3px;
+	background: none !important;
 }
 .contain-to-grid .top-bar {
 	padding-top: 28px;
