@@ -2,17 +2,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
-      options: {
-        includePaths: ['bower_components/foundation/scss']
-      },
-      dist: {
-        options: {
-          outputStyle: 'compressed'
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'compressed'
         },
-        files: {
-          'css/app.css': 'scss/app.scss'
-        }        
+        files: {                         // Dictionary of files
+          'css/app.css': 'scss/app.scss'       // 'destination': 'source'
+        }
       }
     },
 

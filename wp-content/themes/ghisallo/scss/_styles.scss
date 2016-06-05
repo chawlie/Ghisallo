@@ -12,6 +12,71 @@ $alert-red: #c60f13;
 	padding-bottom: 54%;
 }
 
+.tab-bar .menu-icon span::after {
+	display: none;
+}
+
+.accordion {
+	margin-bottom: 30px;
+}
+
+.accordion dd a {
+	color: #fff;
+	background-color: $primary-color;
+	text-decoration: none;
+	font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	padding-top: 22px;
+	padding-right: 60px;
+	position: relative;
+
+	&:before{
+		content: '\f067';
+		font-family: FontAwesome;
+		font-size: 30px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		bottom: 50%;
+		margin-top: -22px;
+	}
+
+	&:hover {
+		background-color: #000;
+	}
+}
+
+.accordion dd.active a {
+	color: #fff;
+	background-color: #000;
+
+	&:before{
+		content: '\f068';
+		font-family: FontAwesome;
+		font-size: 30px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		bottom: 50%;
+		margin-top: -22px;
+	}
+}
+
+.accordion dd .content.active {
+	background: #efefef;
+	padding: 30px;
+}
+
+.accordion dd > p {
+	margin-bottom: 0;
+}
+
+/* Slick Slider Overrides */
+
+button.slick-prev:before, button.slick-next:before {
+	color: $primary-color !important;
+}
+
 /*
 ==========================================================================
 Global General Settings
@@ -23,6 +88,7 @@ body {
 
 h1 {
   font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1;
 }
 h2 {
   font-family: "jaf-mashine", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -93,6 +159,7 @@ Header & Nav Settings
 }
 .top-bar-section ul li {
 	margin-right: 3px;
+	background: none !important;
 }
 .contain-to-grid .top-bar {
 	padding-top: 28px;
@@ -559,7 +626,7 @@ Footer Settings
 */
 .footer {
 	background: #30373e;
-	height: 270px;
+	min-height: 270px;
 	color: #fff;
 	padding-top: 40px;
 
