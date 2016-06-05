@@ -1,4 +1,4 @@
-/* Foundation 5 */
+/* Import Foundation */
 @import "../bower_components/foundation/scss/foundation"; // Foundation 5 by Zurb
 
 // Import normalize
@@ -45,6 +45,9 @@
 // @import "../bower_components/foundation/scss/foundation/components/top-bar";
 // @import "../bower_components/foundation/scss/foundation/components/type";
 // @import "../bower_components/foundation/scss/foundation/components/visibility";
+
+/* Import Libraries */
+@import "../bower_components/fontawesome/scss/font-awesome";
 
 /* Global config */
 @import "config/variables"; // Your custom variables
